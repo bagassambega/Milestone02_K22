@@ -1,0 +1,29 @@
+@import 'base', 'typography', 'color';
+
+body{
+    background-color: $background-2;
+}
+
+.jumbotron{
+    background-color: $background;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            input{
+                margin: 5px;
+            }
+        }
+    }
+}
