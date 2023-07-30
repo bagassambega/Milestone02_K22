@@ -113,3 +113,11 @@ nav ol li a:first-child {
         display: block;
     }
 }
+.dot {
+    height: 128px;
+    width: 128px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 70px;
+}
