@@ -121,3 +121,29 @@ nav ol li a:first-child {
     display: inline-block;
     margin-left: 70px;
 }
+.rowf{
+    content: "";
+    display: table;
+    clear: both;
+}
+.columnf{
+    float: left;
+    
+    padding: 10px;
+}
+.fheader{
+    color: #FFFFFE;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 36px;
+    word-wrap: break-word
+    
+}
+.fcontent{
+    font-size: 18px;
+    font-family: Open Sans;
+    font-weight: 600;
+    line-height: 25px;
+    word-wrap: break-word
+}
