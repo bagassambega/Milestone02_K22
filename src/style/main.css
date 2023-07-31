@@ -9,8 +9,9 @@
 
 
 header {
-    background-color: #444654;
-    position: sticky;
+    background-color: #d2545e;
+    position: absolute;
+    width: 100vw;
     top: 0;
     z-index: 5;
 }
