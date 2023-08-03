@@ -14,7 +14,7 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
+.jumbotron h2, .recomend h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 51px;
   line-height: 72px;
@@ -30,13 +30,13 @@ h3 {
   font-weight: bold;
 }
 
-h4 {
+/* h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
   line-height: 36px;
   letter-spacing: 0;
   font-weight: bold;
-}
+} */
 
 h5 {
   font-family: "Montserrat", sans-serif;
@@ -124,4 +124,92 @@ body {
   bottom: 0px;
 }
 
+.foot-container {
+  width: 100%; 
+  height: 100%; 
+  background: #D2545E;
+}
+
+
+.footer-container {
+  background: #D2545E;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;  
+}
+
+.col-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1vh .5vw;
+}
+
+.col-container a, .col-container p, .col-container h2 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: .9vh 0;
+}
+
+.col-container:first-child {
+  display: flex;
+  justify-content: space-around;
+}
+
+.col-container h2 {
+  text-align: center;
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.photo-picture img {
+  border-radius: 50%;
+  width: 6vw;
+  margin: 0 2vw;
+}
+
+.col-container h4 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.col-container .profile-footer {
+  padding: .5vh 0;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .col-container {
+      text-align: center;
+      justify-content: center;
+      margin: 1.5vw 0;
+  }
+
+  .col-1 {
+      justify-content: center;
+      text-align: start;
+  }
+
+  .col-1 .photo-picture {
+      margin: 3vw;
+  }
+
+  .jumbotron .container {
+    text-align: center;
+  }
+
+  .jumbotron .container h1 {
+    font-size: 10vw;
+    line-height: normal;
+  }
+
+
+}
 /*# sourceMappingURL=index.css.map */
