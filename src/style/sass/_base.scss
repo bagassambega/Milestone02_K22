@@ -1,8 +1,118 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}  
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #363636;
+}
+
 *{
     margin : 0;
     overflow-x: hidden;
+}
 
-    ::-webkit-scrollbar {
-        display: none;
+a{
+    text-decoration: none;
+}
+
+img{
+    user-select: none;
+}
+
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 56px;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    nav{
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .nav-left{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            img{
+                padding:2px;
+                width: 44px;
+                border-radius: 64px;
+                margin: 5px;
+                margin-right: 10px;
+            }
+        }
+        .nav-right{
+            display: flex;
+            flex-direction: row;
+            a{
+                margin: 16px;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100vw;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-container{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .footer-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .footer-identity{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                h4{
+                    margin-bottom: -25px;
+                }
+                img{
+                    margin-top:32px ;
+                    margin-right: 20px;
+                    width: 100px;
+                    height: 100px;  
+                    border-radius: 50px;
+                    padding: 5px;
+                }
+            }
+            .footer-links{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .footer-link{
+                    margin: 32px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                    h5{
+                        margin-bottom: 10px;
+                    }
+                    h6{
+                        margin-bottom:3px;
+                    }
+                }
+            }
+        }
     }
 }

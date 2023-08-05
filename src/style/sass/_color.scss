@@ -11,3 +11,34 @@ $Error : #ee3e54;
 h1,h2,h3,h4,h5,h6{
     color: $headline;
 }
+
+header{
+    background-color: $primary;
+    
+    img{
+        background-color: $background;
+    }
+}
+
+nav h5{
+    color: $background;
+}
+    
+
+.add-card{
+    background-color: $background-2;
+}
+
+footer{
+    background-color: $primary;
+
+    h4, h5{
+        color: $background;
+    }
+    h6{
+        color: #e7d8c6;
+    }
+    img{
+        background-color: $background;
+    }
+}

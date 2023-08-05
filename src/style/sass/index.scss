@@ -4,15 +4,15 @@ body{
     background-color: $background-2;
 }
 
+
 .jumbotron{
-    overflow-x: hidden;
     background-color: $background;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    .container{
+    .jumbotron-container{
         z-index: 2;
         display: flex;
         flex-direction: column;
@@ -51,17 +51,116 @@ body{
             }
         }
     }
-    img{
-        position: absolute;
-        z-index: 1;
-        opacity: 85%;
-    }
     #img-jumbotron-1{
+        position: absolute;
+        z-index: 0;
+        opacity: 85%;
         left: 0px;
         top: 0px;
     }
     #img-jumbotron-2{
+        position: absolute;
+        z-index: 0;
+        opacity: 85%;
         right: -5px;
         bottom: 0px;
+    }
+}
+
+.recomend{
+    position: relative;
+    z-index: 4;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.24);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .recomend-container{
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            margin-top: -20px;
+            margin-bottom: 80px;
+        }
+        .recomend-content{
+            display: flex;
+            flex-direction: row;
+            .recomend-card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-items: center;
+                margin: 48px;
+                img{
+                    border-radius: 120px;
+                    margin-bottom: 30px;
+                }
+                *{
+                    margin: 4px;
+                }
+            }
+        }
+    }
+}
+
+.add{
+    background-color: $background;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .add-container{
+        z-index: 4;
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            margin-top: -20px;
+            margin-bottom: 80px;
+        }
+        .add-content{
+            display: flex;
+            flex-direction: row;
+            .add-card{
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 40px;
+                .add-card-text{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 80px;
+                }
+                img{
+                    width: 280px;
+                }
+            }
+        }
+    }
+    #img-add-1{
+        opacity: 85%;
+        position: absolute;
+        z-index: 0;
+        bottom: -200vh;
+        left: 0;
+    }
+    #img-add-2{
+        opacity: 85%;
+        position: absolute;
+        z-index: 0;
+        top: 200vh;
+        right: 0;
     }
 }
