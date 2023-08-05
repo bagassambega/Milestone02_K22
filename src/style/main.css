@@ -148,3 +148,23 @@ nav ol li a:first-child {
     line-height: 25px;
     word-wrap: break-word
 }
+.bg-bg{
+    background-color: rgb(137, 19, 27) ;
+    border-radius: 100%;
+    height: 170px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-bg{
+    border-radius: 100%;
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
