@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
     <head>
@@ -11,6 +12,8 @@
 <body>
     <div class="card-container">
         <?php
+
+
             $servername = "containers-us-west-135.railway.app";
             $dBName = "railway";
             $dBUsername = "root";
@@ -24,17 +27,21 @@
                 die("Connection failed" . mysqli_connect_error());
             }
 
-            $sql = "SELECT namaTempat, alamat FROM makanTable";
+            $sql = "SELECT namaTempat, alamat, gambar FROM makanTable";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
                 $counter = 1;
                 while ($row = $result->fetch_assoc()) {
                     echo '<div class="card">';
-                    echo '<div class="circle-frame">' . $counter . '</div>';
+                    echo '<img class="circle-frame" alt="gambar" src="' . $row["gambar"] . '">'  ;
                     echo '<div class="item">';
                     echo '<div>' . $row["namaTempat"] . '</div>';
                     echo "<div>" . $row["alamat"] . "</div>";
+                    echo '<form action="tempat.php" method="post">
+                                <button type="submit" name="detailButton" value="' . $row["namaTempat"] . '">Detail</button>
+                            </form>
+                    ';
                     echo '</div>';
                     echo "</div>";
                     $counter++;
@@ -44,6 +51,7 @@
             }
 
             $conn->close();
+            
 
         ?>
     </div>
