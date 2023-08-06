@@ -206,6 +206,7 @@ input::placeholder {
   justify-content: center;
 }
 .tambah .tambah-container {
+  z-index: 5;
   width: 80vw;
   display: flex;
   flex-direction: column;
@@ -254,6 +255,20 @@ input::placeholder {
 }
 .tambah .tambah-container form #submit:active, .tambah .tambah-container form #submit:hover {
   border: 3px solid #d2545e;
+}
+.tambah #img-tambah-1 {
+  z-index: 1;
+  position: absolute;
+  opacity: 50%;
+  top: 56px;
+  left: 0;
+}
+.tambah #img-tambah-2 {
+  z-index: 1;
+  position: absolute;
+  opacity: 50%;
+  bottom: 0;
+  right: 0;
 }
 
 /*# sourceMappingURL=tambah.css.map */
