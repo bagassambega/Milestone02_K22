@@ -2,6 +2,8 @@
 
 .tambah{
     width: 100vw;
+    position: relative;
+
     height: 100vh;
     display: flex;
     align-items: center;
@@ -43,7 +45,7 @@
                 }
                 
             }
-            #button{
+            button{
                 border: none;
                 margin: 20px;
                 margin-right: 50px;
