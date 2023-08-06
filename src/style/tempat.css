@@ -157,7 +157,7 @@ h5 {
   letter-spacing: 0;
 }
 
-h6, #search, #submit {
+h6, input, textarea, li {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -174,9 +174,6 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   background-color: #d2545e;
-}
-header img {
-  background-color: #fff2e2;
 }
 
 nav h5, nav h6 {
@@ -196,8 +193,9 @@ footer h4, footer h5 {
 footer h6 {
   color: #e7d8c6;
 }
-footer img {
-  background-color: #fff2e2;
+
+input::placeholder {
+  color: #8f8f8f;
 }
 
 .content {

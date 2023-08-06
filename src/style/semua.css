@@ -157,7 +157,7 @@ h5 {
   letter-spacing: 0;
 }
 
-h6, #search, #submit {
+h6, input, textarea, li {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -192,6 +192,10 @@ footer h4, footer h5 {
 }
 footer h6 {
   color: #e7d8c6;
+}
+
+input::placeholder {
+  color: #8f8f8f;
 }
 
 /*# sourceMappingURL=semua.css.map */

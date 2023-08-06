@@ -157,7 +157,7 @@ h5 {
   letter-spacing: 0;
 }
 
-h6, input, textarea {
+h6, input, textarea, li {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 18px;
