@@ -24,6 +24,7 @@ a {
 }
 
 img {
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -342,6 +343,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 80px;
+  
 }
 .add .add-container .add-content .add-card img {
   width: 280px;
@@ -359,6 +361,10 @@ body {
   z-index: 0;
   top: 200vh;
   right: 0;
+}
+
+.add-card-text:nth-child(2) h5 {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=index.css.map */
