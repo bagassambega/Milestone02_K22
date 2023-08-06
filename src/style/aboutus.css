@@ -175,9 +175,6 @@ h1, h2, h3, h4, h5, h6 {
 header {
   background-color: #d2545e;
 }
-header img {
-  background-color: #fff2e2;
-}
 
 nav h5, nav h6 {
   color: #fff2e2;
@@ -196,66 +193,5 @@ footer h4, footer h5 {
 footer h6 {
   color: #e7d8c6;
 }
-footer img {
-  background-color: #fff2e2;
-}
 
-.content {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff2e2;
-}
-.content .content-img-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.content .content-img-2 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-.content .content-container {
-  width: 70vw;
-  margin-top: -5vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.content .content-main {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 50px;
-}
-.content .content-main svg {
-  margin-right: 40px;
-  opacity: 90%;
-}
-.content .content-main .content-main-text {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.content .content-main .content-main-text .content-main-stars {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
-}
-.content .content-main .content-main-text .content-main-stars img {
-  margin: 4px;
-}
-.content .content-description {
-  text-align: justify;
-}
-.content .content-description h5 {
-  margin: 30px;
-}
-
-/*# sourceMappingURL=tempat.css.map */
+/*# sourceMappingURL=aboutus.css.map */

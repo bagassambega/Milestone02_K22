@@ -8,19 +8,19 @@ $secondary : #ff8e3c;
 $Success : #93bc39;
 $Error : #ee3e54;
 
+body{
+    background-color: $background-2;
+}
+
 h1,h2,h3,h4,h5,h6{
     color: $headline;
 }
 
 header{
     background-color: $primary;
-    
-    img{
-        background-color: $background;
-    }
 }
 
-nav h5{
+nav h5, nav h6{
     color: $background;
 }
     
@@ -37,8 +37,5 @@ footer{
     }
     h6{
         color: #e7d8c6;
-    }
-    img{
-        background-color: $background;
     }
 }

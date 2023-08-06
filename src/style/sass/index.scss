@@ -1,10 +1,5 @@
 @import 'base', 'typography', 'color';
 
-body{
-    background-color: $background-2;
-}
-
-
 .jumbotron{
     background-color: $background;
     width: 100vw;
@@ -12,21 +7,25 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
     .jumbotron-container{
         z-index: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         form{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
             input{
                 margin: 5px;
                 outline: none
             }
+
             #search{
                 width: 300px;
                 height: 25px;
@@ -35,9 +34,11 @@ body{
                 border: 4px solid $secondary;
                 padding: 7px;      
             } 
+
             #search::placeholder{
                 color: $paragraf-2;
             }
+
             #submit{
                 border: none;
                 width: 170px;
@@ -46,11 +47,13 @@ body{
                 color: $background-2;
                 background-color: $secondary;
             }
+
             #submit:active, #submit:hover{
                 border: 3px solid $primary;
             }
         }
     }
+
     #img-jumbotron-1{
         position: absolute;
         z-index: 0;
@@ -58,6 +61,7 @@ body{
         left: 0px;
         top: 0px;
     }
+
     #img-jumbotron-2{
         position: absolute;
         z-index: 0;
@@ -76,6 +80,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
     .recomend-container{
         width: 90vw;
         height: 100vh;
@@ -83,23 +88,32 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         h2{
             margin-top: -20px;
             margin-bottom: 80px;
         }
+
         .recomend-content{
             display: flex;
             flex-direction: row;
+
             .recomend-card{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-items: center;
                 margin: 48px;
+
                 img{
                     border-radius: 120px;
                     margin-bottom: 30px;
                 }
+
+                h6{
+                    color: $secondary;
+                }
+
                 *{
                     margin: 4px;
                 }
@@ -115,6 +129,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
     .add-container{
         z-index: 4;
         width: 90vw;
@@ -123,13 +138,16 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
         h2{
             margin-top: -20px;
             margin-bottom: 80px;
         }
+
         .add-content{
             display: flex;
             flex-direction: row;
+
             .add-card{
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 border-radius: 10px;
@@ -137,18 +155,25 @@ body{
                 flex-direction: column;
                 align-items: center;
                 margin: 40px;
+
                 .add-card-text{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     height: 80px;
                 }
+
+                .add-card-text:nth-child(2) h5 {
+                    font-size: 16px;
+                }              
+
                 img{
                     width: 280px;
                 }
             }
         }
     }
+
     #img-add-1{
         opacity: 85%;
         position: absolute;
@@ -156,6 +181,7 @@ body{
         bottom: -200vh;
         left: 0;
     }
+    
     #img-add-2{
         opacity: 85%;
         position: absolute;
