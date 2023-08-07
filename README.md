@@ -87,5 +87,18 @@ Fitur ini dapat digunakan oleh pengguna untuk melihat info lebih lanjut mengenai
 
 Masuk ke website All, lalu klik detail di salah satu tempat. Di sana pengguna dapat melihat berbagai informasi mengenai tempat yang direkomendasikan sekaligus melihat bahkan menambahkan rating dan komentar terhadap tempat tersebut.
 
-
+## Kontribusi
+Bagas Sambega Rosyada (19622189) - Backend
+Ivan Hendrawan Tan (19622013) - HTML CSS
+Rashid May (19622021)
+Josia Ryan Juliandy Silalahi (19622043) - README
+Raden Francisco Trianto Bratadiningrat (19622078) - Frontend
+Billy Samuel Setiawan (19622082) - CSS
+Fedrianz Dharma (19622128) - HTML CSS
+Givari Al Fachri (19622141)
+Shafiq Irvansyah (19622210) - CSS
+Jason Fernando (19622254) - CSS
+Anindita Widya Santoso (19622261) - README & Database
+Audra Zelvania Putri Harjanto (19622262) - Database & Resource
+Pradipta Rafa Mahesa (19622285) 
 
