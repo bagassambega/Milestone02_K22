@@ -100,5 +100,5 @@ Shafiq Irvansyah (19622210) - CSS
 Jason Fernando (19622254) - CSS
 Anindita Widya Santoso (19622261) - README & Database
 Audra Zelvania Putri Harjanto (19622262) - Database & Resource
-Pradipta Rafa Mahesa (19622285) 
+Pradipta Rafa Mahesa (19622285) - HTML CSS
 
