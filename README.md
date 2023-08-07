@@ -4,7 +4,7 @@ Membuat website rekomendasi tempat makan untuk mahasiswa
 
  
 
-# Team
+## Team
 Team Name : Void  
 Head : Bagas Sambega Rosyada (19622189)  
 Member :
@@ -21,19 +21,19 @@ Member :
 - Audra Zelvania Putri Harjanto (19622262)
 - Pradipta Rafa Mahesa (19622285)
 
-# Design
+## Design
 https://www.figma.com/file/lOb2awTv4tCu3zDVczx6pf/Milestone-22-Web-Tempat-Makan-Untuk-Mahasiswa?type=design&node-id=0%3A1&mode=design&t=qtqxb5mFZGPMReAW-1
 
-# Proposal
+## Proposal
 https://docs.google.com/document/d/1JltCXNvGyfTjYeagJEr-SK7P0qkrXLl4dKEp7ktihzE/edit?usp=sharing 
 
-# Latar Belakang Masalah
+## Latar Belakang Masalah
 Lorem ipsum ....
 
-# Solusi
+## Solusi
 Lorem Ipsum....
 
-# Requirement Program
+## Requirement Program
 1. Xampp
 
  XAMPP adalah perangkat lunak bebas, yang mendukung banyak sistem operasi, merupakan kompilasi dari beberapa program. Fungsinya adalah sebagai server yang berdiri sendiri, yang terdiri atas program Apache HTTP Server, MySQL database, dan penerjemah bahasa yang ditulis dengan bahasa pemrograman PHP dan Perl.Untuk menggunakan website yang kami buat, pengguna perlu menginstall Xampp sebagai server.
@@ -42,7 +42,7 @@ Lorem Ipsum....
 
 Selayaknya website pada umumnya, pengguna perlu terhubung ke jalur internet untuk mengakses website ini.
 
-# Fitur dan Cara Menggunakan
+## Fitur dan Cara Menggunakan
 Lorem Ipsum....
 
 
