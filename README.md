@@ -24,6 +24,9 @@ Member :
 ## Design
 https://www.figma.com/file/lOb2awTv4tCu3zDVczx6pf/Milestone-22-Web-Tempat-Makan-Untuk-Mahasiswa?type=design&node-id=0%3A1&mode=design&t=qtqxb5mFZGPMReAW-1
 
+## Video Demonstrasi
+https://drive.google.com/file/d/1x1WrIRvg_IL5NZEK-yhkkXz-95PJXCGO/view?usp=sharing
+
 ## Proposal
 https://docs.google.com/document/d/1JltCXNvGyfTjYeagJEr-SK7P0qkrXLl4dKEp7ktihzE/edit?usp=sharing 
 
@@ -31,16 +34,25 @@ https://docs.google.com/document/d/1JltCXNvGyfTjYeagJEr-SK7P0qkrXLl4dKEp7ktihzE/
 Tantangan dalam kehidupan kampus seperti sulitnya menemukan tempat makan yang cocok dan berkualitas terjadi karena keterbatasan waktu dan energi, keuangan, mahassiswa yang jauh dari rumah, variasi pilihan yang ada, dan faktor gizi. Keterbatasan ini menjadi pokok permasalahan yang akan dijawab oleh website yang kelompok kami telah buat.
 
 ## Solusi
-Lorem Ipsum....
+Untuk mengatasi masalah tersebut, kami membuat suatu website yang dapat menjadi wadah bagi pengguna untuk mendapat dan menambah tempat rekomendasi makanan bagi mereka. Pengguna dapat mendapatkan banyak informasi mengenai tempat makan yang direkomendasikan dan di-rating oleh pengguna lain, dan mereka juga dapat memberikan rekomendasi tempat makan mereka beserta rating dan komentar.
 
 ## Requirement Program
 1. Xampp
 
- XAMPP adalah perangkat lunak bebas, yang mendukung banyak sistem operasi, merupakan kompilasi dari beberapa program. Fungsinya adalah sebagai server yang berdiri sendiri, yang terdiri atas program Apache HTTP Server, MySQL database, dan penerjemah bahasa yang ditulis dengan bahasa pemrograman PHP dan Perl.Untuk menggunakan website yang kami buat, pengguna perlu menginstall Xampp sebagai server.
+XAMPP adalah perangkat lunak bebas, yang mendukung banyak sistem operasi, merupakan kompilasi dari beberapa program. Fungsinya adalah sebagai server yang berdiri sendiri, yang terdiri atas program Apache HTTP Server, MySQL database, dan penerjemah bahasa yang ditulis dengan bahasa pemrograman PHP dan Perl.Untuk menggunakan website yang kami buat, pengguna perlu menginstall Xampp sebagai server.
 
 2. Internet yang memadai
 
 Selayaknya website pada umumnya, pengguna perlu terhubung ke jalur internet untuk mengakses website ini.
+
+## Cara Akses Website
+Website yang digunakan dijalankan di local, sehingga dibutuhkan software seperti XAMPP untuk menjalankannya.
+
+1. Buka XAMPP dan start Apache dan MYSQL
+2. Gunakan port yang digunakan untuk mengakses website. Jika menggunakan local, maka gunakan localhost:port/ di mana tulisan port diganti dengan port yang digunakan di XAMPP kita
+3. Ingat-ingat settings directory kita untuk localhost server XAMPP (bisa dilihat di httpd.conf). Di bagian belakang dari localhost, tambahkan index.php dan Anda akan sampai di landing page
+4. Penggunaan fitur dijelaskan lebih lanjut di bawah ini
+
 
 ## Fitur dan Cara Menggunakan
 1. Header
@@ -70,6 +82,9 @@ Fitur ini berisi data-data para pengembang dari website ini.
 A. Website Terkait
 
 Fitur ini dapat digunakan oleh pengguna untuk melihat info lebih lanjut mengenai ITB dan HMIF ITB. Pengguna akan diarahkan ke web resmi ITB dan HMIF ITB.
+
+3. Content Detail
+Masuk ke website All, lalu klik detail di salah satu tempat. Di sana pengguna dapat melihat berbagai informasi mengenai tempat yang direkomendasikan sekaligus melihat bahkan menambahkan rating dan komentar terhadap tempat tersebut.
 
 
 
