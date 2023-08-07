@@ -43,6 +43,8 @@ Lorem Ipsum....
 Selayaknya website pada umumnya, pengguna perlu terhubung ke jalur internet untuk mengakses website ini.
 
 ## Fitur dan Cara Menggunakan
+1. Header
+
 A. Cari Tempat Makan Yuk!
 
 Fitur ini terdapat pada halaman utama website. Pengguna dapat mengetikkan tempat makan atau jenis makanan yang ingin dicari pada kolom pencarian.
@@ -52,6 +54,23 @@ B. Semua
 Fitur ini berisi seluruh data tempat makanan yang website kami miliki. Data-data pada fitur ini akan bertambah seiring pengguna yang memasukkan data tempat makan rekomendasi mereka.
 
 C. Recommended
+
+Fitur ini berisi top 3 tempat makan yang paling direkomendasikan oleh website kami yang diambil berdasarkan rating yang ada. Pengguna dapat melihat top 3 rekomendasi tempat makan pada fitur ini.
+
+D. Tambah
+
+Pengguna dapat menambahkan fitur ini untuk menambah rekomendasi tempat makan. Pengguna akan mengisikan beberapa data seperti nama tempat, jenis makanan, lokasi, rating, dan sebagainya.
+
+E. Tentang Kami
+
+Fitur ini berisi data-data para pengembang dari website ini.
+
+2. Footer
+
+A. Website Terkait
+
+Fitur ini dapat digunakan oleh pengguna untuk melihat info lebih lanjut mengenai ITB dan HMIF ITB. Pengguna akan diarahkan ke web resmi ITB dan HMIF ITB.
+
 
 
 
