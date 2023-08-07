@@ -114,7 +114,6 @@ input::placeholder {
 .tambah {
   width: 100vw;
   position: relative;
-  top: 20vh;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -124,8 +123,8 @@ input::placeholder {
   z-index: 5;
   width: 80vw;
   display: flex;
-  position: relative;
   top: 20vh;
+  position: relative;
   flex-direction: column;
   justify-content: center;
 }

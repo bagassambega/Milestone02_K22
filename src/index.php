@@ -28,8 +28,8 @@
         <div class="recomend-content">
             <div class="recomend-card">
                 <img src="./img/placeholder.png" alt="">
-                <h4>Upnormal Djuanda</h4>
-                <a href="tempat.html"><h6>Lihat Tempat</h6></a>
+                <h4>Bebek Ali Borme</h4>
+                <a href="all.php"><h6>Lihat Tempat</h6></a>
                 <svg width="200" height="4" viewBox="0 0 200 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="2" x2="200" y2="2" stroke="#FF8E3C" stroke-width="4"/>
                 </svg>        
@@ -37,15 +37,15 @@
             <div class="recomend-card">
                 <img src="./img/placeholder.png" alt="">
                 <h4>Upnormal Djuanda</h4>
-                <a href="tempat.html"><h6>Lihat Tempat</h6></a>
+                <a href="all.php"><h6>Lihat Tempat</h6></a>
                 <svg width="200" height="4" viewBox="0 0 200 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="2" x2="200" y2="2" stroke="#FF8E3C" stroke-width="4"/>
                 </svg>        
             </div>
             <div class="recomend-card">
                 <img src="./img/placeholder.png" alt="">
-                <h4>Upnormal Djuanda</h4>
-                <a href="tempat.html"><h6>Lihat Tempat</h6></a>
+                <h4>Bakmie Hokie</h4>
+                <a href="all.php"><h6>Lihat Tempat</h6></a>
                 <svg width="200" height="4" viewBox="0 0 200 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="2" x2="200" y2="2" stroke="#FF8E3C" stroke-width="4"/>
                 </svg>        

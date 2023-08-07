@@ -31,6 +31,7 @@
         $query = "INSERT INTO review (namaTempat, ratingTotal, ratinger, deskripsi, namaRating) VALUES ('$namaTempat', '$rating', 1, '$komentar', '$reviewer')";
         if ($conn->query($query) === TRUE) {
             echo "Berhasil";
+            echo '<a href="all.php" style="padding: 10px; background-color: #f0f0f0;">Kembali</a>';
         }
         else {
             echo "gagal";

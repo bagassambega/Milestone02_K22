@@ -44,7 +44,7 @@ else {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $submittedName; ?></title>
-    <link href="./style/tempat.css" type="text/css" rel="stylesheet">
+    <link href="./style/tempat.css?v=<?php echo time(); ?>" type="text/css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
 </head>
 <?php include 'header.html'; ?>
@@ -81,32 +81,38 @@ else {
                 <h5>Jam Buka: <?php echo $jam;?></h5>
                 <h5>Menu:</h5>
                 <p><?php echo $menu;?></p>
+            </div>
+            <div class="rating">
                 <h3>Rating!</h3>
                 <p>
                  <?php 
                         if ($result3->num_rows > 0) {
                             while ($row3 = $result3->fetch_assoc()) {
+                                echo '<div class="rating-container">';
                                 echo '<h5>' . $row3["namaRating"] . '</h5>';
-                                echo '<h5>' . $row3['ratingTotal'] . ' / 5 </h5>';
+                                echo '<h5 style="font-size: smaller;">' . $row3['ratingTotal'] . ' / 5 </h5>';
                                 echo '<p>' . $row3['deskripsi'] . '</p>';
+                                echo '</div>';
                             }
                         }
                         else {
-                            echo "error";
+                            echo "<h5>Belum ada rating yang diberikan</h5>";
                         }
                 ?>
                 </p>
             </div>
             <div class="review-add">
+                <h3>Beri Ratingmu!</h3>
                 <form action="review.php" method="post">
                     <label for="nama">Nama (opsional)</label>
                     <input type="text" name="namaReviewer">
-                    <br>
+                    <br> <br>
                     <label for="rate">Rating (1-5)</label>
                     <input autocomplete="off" name="rating" type="range" value="1" min="1" max="5" step="1">
-                    <br>
+                    <br> <br>
                     <label for="komen">Komentarmu</label>
                     <input type="text" name="komen">
+                    <br> <br>
                     <input type="hidden" name="namaTempat" value="<?php echo $submittedName;?>">
                     <button type="submit" name="submit">Submit</button>
                 </form>

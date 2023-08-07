@@ -27,96 +27,6 @@ img {
   user-select: none;
 }
 
-header {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 56px;
-  z-index: 4;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-header nav {
-  width: 90vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-header nav .nav-left {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-header nav .nav-left img {
-  padding: 2px;
-  width: 44px;
-  border-radius: 64px;
-  margin: 5px;
-  margin-right: 10px;
-}
-header nav .nav-right {
-  display: flex;
-  flex-direction: row;
-}
-header nav .nav-right a {
-  margin: 12px;
-}
-
-footer {
-  width: 100vw;
-  height: 240px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .footer-container {
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-footer .footer-container .footer-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-footer .footer-container .footer-content .footer-identity {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-footer .footer-container .footer-content .footer-identity h4 {
-  margin-bottom: -8px;
-}
-footer .footer-container .footer-content .footer-identity img {
-  margin-right: 20px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  padding: 5px;
-}
-footer .footer-container .footer-content .footer-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-footer .footer-container .footer-content .footer-links .footer-link {
-  margin: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-}
-footer .footer-container .footer-content .footer-links .footer-link h5 {
-  margin-bottom: 10px;
-}
-footer .footer-container .footer-content .footer-links .footer-link h6 {
-  margin-bottom: 3px;
-}
 
 h1 {
   font-family: "Montserrat", sans-serif;
@@ -201,7 +111,7 @@ input::placeholder {
 .content {
   width: 100vw;
   top: 20vh;
-  position: relative;
+
   /* height: 100vh; */
   display: flex;
   justify-content: center;
@@ -219,8 +129,8 @@ input::placeholder {
   right: 0;
 }
 .content .content-container {
-  width: 70vw;
-  margin-top: -5vh;
+  width: 80vw;
+  /* margin-top: 40vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,17 +146,14 @@ input::placeholder {
   opacity: 90%;
 }
 .content .content-main .content-main-text {
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: column;
 }
 .content .content-main .content-main-text .content-main-stars {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
+
+  
 }
 .content .content-main .content-main-text .content-main-stars img {
   margin: 4px;
@@ -254,12 +161,19 @@ input::placeholder {
 .content .content-description {
   text-align: justify;
 }
-.content .content-description h5 {
-  margin: 30px;
+.content-main-stars h5 {
+  margin: 3vh 0;
 }
-
-form button {
-  margin-bottom: 10vh;
+.rating-container {
+  margin: 2vh 0;
 }
-
+.rating {
+  margin: 2vh 0;
+}
+.content-main-text {
+  padding: 1vh 1vw;
+}
+.review-add {
+  margin: 2vh 0;
+}
 /*# sourceMappingURL=tempat.css.map */
