@@ -28,7 +28,7 @@ https://www.figma.com/file/lOb2awTv4tCu3zDVczx6pf/Milestone-22-Web-Tempat-Makan-
 https://docs.google.com/document/d/1JltCXNvGyfTjYeagJEr-SK7P0qkrXLl4dKEp7ktihzE/edit?usp=sharing 
 
 ## Latar Belakang Masalah
-Lorem ipsum ....
+Tantangan dalam kehidupan kampus seperti sulitnya menemukan tempat makan yang cocok dan berkualitas terjadi karena keterbatasan waktu dan energi, keuangan, mahassiswa yang jauh dari rumah, variasi pilihan yang ada, dan faktor gizi. Keterbatasan ini menjadi pokok permasalahan yang akan dijawab oleh website yang kelompok kami telah buat.
 
 ## Solusi
 Lorem Ipsum....
