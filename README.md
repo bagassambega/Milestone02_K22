@@ -43,7 +43,7 @@ XAMPP adalah perangkat lunak bebas, yang mendukung banyak sistem operasi, merupa
 
 2. Internet yang memadai
 
-Selayaknya website pada umumnya, pengguna perlu terhubung ke jalur internet untuk mengakses website ini.
+Selayaknya website pada umumnya, pengguna perlu terhubung ke jalur internet yang memadai untuk mengakses website ini.
 
 ## Cara Akses Website
 Website yang digunakan dijalankan di local, sehingga dibutuhkan software seperti XAMPP untuk menjalankannya.
