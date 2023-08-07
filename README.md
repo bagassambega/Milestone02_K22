@@ -84,6 +84,7 @@ A. Website Terkait
 Fitur ini dapat digunakan oleh pengguna untuk melihat info lebih lanjut mengenai ITB dan HMIF ITB. Pengguna akan diarahkan ke web resmi ITB dan HMIF ITB.
 
 3. Content Detail
+
 Masuk ke website All, lalu klik detail di salah satu tempat. Di sana pengguna dapat melihat berbagai informasi mengenai tempat yang direkomendasikan sekaligus melihat bahkan menambahkan rating dan komentar terhadap tempat tersebut.
 
 
