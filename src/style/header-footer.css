@@ -94,7 +94,6 @@
     margin-bottom: -8px;
   }
   footer .footer-container .footer-content .footer-identity img {
-    margin-right: 20px;
     width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -116,6 +115,10 @@
   }
   footer .footer-container .footer-content .footer-links .footer-link h6 {
     margin-bottom: 3px;
+  }
+
+  footer .footer-container .last-h6 {
+    margin-left: 7px;
   }
   
   h1 {
