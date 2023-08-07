@@ -35,12 +35,14 @@ Lorem Ipsum....
 
 # Requirement Program
 1. Xampp
-   XAMPP adalah perangkat lunak bebas, yang mendukung banyak sistem operasi, merupakan kompilasi dari beberapa program. Fungsinya adalah sebagai server yang berdiri sendiri, yang terdiri atas program Apache HTTP Server, MySQL database, dan penerjemah bahasa yang ditulis dengan bahasa pemrograman PHP dan Perl.Untuk menggunakan website yang kami buat, pengguna perlu menginstall Xampp sebagai server.
+
+ XAMPP adalah perangkat lunak bebas, yang mendukung banyak sistem operasi, merupakan kompilasi dari beberapa program. Fungsinya adalah sebagai server yang berdiri sendiri, yang terdiri atas program Apache HTTP Server, MySQL database, dan penerjemah bahasa yang ditulis dengan bahasa pemrograman PHP dan Perl.Untuk menggunakan website yang kami buat, pengguna perlu menginstall Xampp sebagai server.
 
 2. Internet yang memadai
-   Selayaknya website pada umumnya, pengguna perlu terhubung ke jalur internet untuk mengakses website ini.
 
-# Cara Menggunakan
+Selayaknya website pada umumnya, pengguna perlu terhubung ke jalur internet untuk mengakses website ini.
+
+# Fitur dan Cara Menggunakan
 Lorem Ipsum....
 
 
