@@ -200,7 +200,9 @@ input::placeholder {
 
 .content {
   width: 100vw;
-  height: 100vh;
+  top: 20vh;
+  position: relative;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,6 +256,10 @@ input::placeholder {
 }
 .content .content-description h5 {
   margin: 30px;
+}
+
+form button {
+  margin-bottom: 10vh;
 }
 
 /*# sourceMappingURL=tempat.css.map */

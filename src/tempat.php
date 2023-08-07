@@ -19,6 +19,8 @@ $sql = "SELECT namaTempat, jamBuka, category, menu, linkMaps, gambar, socmed, al
 $result = $conn->query($sql);
 $sql2 = "SELECT namaTempat, COUNT(*) as nbanyak, SUM(ratingTotal) as sumTotal FROM review WHERE namaTempat = '$submittedName'  GROUP BY namaTempat";
 $result2 = $conn->query($sql2);
+$sql3 = "SELECT namaTempat, deskripsi, ratingTotal, ratinger, namaRating FROM review WHERE namaTempat = '$submittedName'";
+$result3 = $conn->query($sql3);
 
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
@@ -32,9 +34,7 @@ if ($result->num_rows > 0) {
 else {
     echo "Data tidak ditemukan";
 }
-$row2 = $result2->fetch_assoc();
-$sumTotal = $row2['sumTotal'];
-$nbanyak = $row2['nbanyak'];
+
 ?>
 
 
@@ -57,12 +57,21 @@ $nbanyak = $row2['nbanyak'];
                 <div class="content-main-text">
                     <h2><?php echo $submittedName; ?></</h2>
                     <div class="content-main-stars">
-                        <!-- <img src="./img/star-full.png" alt="fullstar">
-                        <img src="./img/star-full.png" alt="fullstar">
-                        <img src="./img/star-full.png" alt="fullstar">
-                        <img src="./img/star-full.png" alt="fullstar">
-                        <h5> | 4</h5> -->
-                        <h5>Rating: <?php echo $sumTotal / $nbanyak; ?> / 5</h5>
+                        <h5>Rating: <?php
+                        if ($result2) {
+                            // Check if there is at least one row in the result set
+                            if ($row2 = $result2->fetch_assoc()) {
+                                $sumTotal = $row2['sumTotal'];
+                                $nbanyak = $row2['nbanyak'];
+                                echo round($sumTotal / $nbanyak, 2) . "/5";
+                            } else {
+                                echo "Belum ada rating diberikan";
+                            }
+                        } else {
+                            echo "Query gagal.";
+                        }
+                        
+                        ?></h5>
                     </div>
                     <h4>Lokasi : <?php echo $alamat ?> <a href="#"><img src="./img/map.png" alt=""></a></h4>
                 </div>
@@ -72,15 +81,35 @@ $nbanyak = $row2['nbanyak'];
                 <h5>Jam Buka: <?php echo $jam;?></h5>
                 <h5>Menu:</h5>
                 <p><?php echo $menu;?></p>
-                <h5>Rating!</h5>
-                <!-- <?php 
-                if ($result2->num_rows > 0) {
-                    while ($row = $result2->fetch_assoc()) {
-                        echo $row["ratingTotal"];
-                    }
-                }
-                ?> -->
-                <p><?php echo $deskripsi; ?></p>
+                <h3>Rating!</h3>
+                <p>
+                 <?php 
+                        if ($result3->num_rows > 0) {
+                            while ($row3 = $result3->fetch_assoc()) {
+                                echo '<h5>' . $row3["namaRating"] . '</h5>';
+                                echo '<h5>' . $row3['ratingTotal'] . ' / 5 </h5>';
+                                echo '<p>' . $row3['deskripsi'] . '</p>';
+                            }
+                        }
+                        else {
+                            echo "error";
+                        }
+                ?>
+                </p>
+            </div>
+            <div class="review-add">
+                <form action="review.php" method="post">
+                    <label for="nama">Nama (opsional)</label>
+                    <input type="text" name="namaReviewer">
+                    <br>
+                    <label for="rate">Rating (1-5)</label>
+                    <input autocomplete="off" name="rating" type="range" value="1" min="1" max="5" step="1">
+                    <br>
+                    <label for="komen">Komentarmu</label>
+                    <input type="text" name="komen">
+                    <input type="hidden" name="namaTempat" value="<?php echo $submittedName;?>">
+                    <button type="submit" name="submit">Submit</button>
+                </form>
             </div>
         </div>
         <img class="content-img-2" src="./img/tempat-2.png" alt="">

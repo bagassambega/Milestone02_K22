@@ -30,7 +30,7 @@ if (isset($_POST["submit"])) {
     require_once 'function.inc.php';
 
     $query = "INSERT INTO makanTable (namaTempat, jamBuka, category, menu, linkMaps, gambar, socmed, alamat, description) VALUES ('$name', '$jamBuka', '$category', '$menu', '$linkmaps', '$gambar', '$socmed', '$alamat', '$deskripsi')";
-    $query2 = "INSERT INTO review (namaTempat, ratingTotal, ratinger, deskripsi) VALUES ('$name', '$rating', 1, '$komen')";
+    $query2 = "INSERT INTO review (namaTempat, ratingTotal, ratinger, deskripsi, namaRating) VALUES ('$name', '$rating', 1, '$komen', '$pengirim')";
     if (($conn->query($query) === TRUE) && ($conn->query($query2) === TRUE)) {
         echo "Data inserted successfully! Go back to previous page.";
     } else {
