@@ -22,12 +22,17 @@ if (isset($_POST["submit"])) {
     $gambar = $_POST["gambar"];
     $socmed = $_POST["socmed"];
     $alamat = $_POST["alamat"];
+    $deskripsi = $_POST["deskripsi"];
+    $pengirim = $_POST["nama_pengirim"];
+    $rating = $_POST["rating"];
+    $komen = $_POST["komen"];
 
     require_once 'function.inc.php';
 
-    $query = "INSERT INTO makanTable (namaTempat, jamBuka, category, menu, linkMaps, gambar, socmed, alamat) VALUES ('$name', '$jamBuka', '$category', '$menu', '$linkmaps', '$gambar', '$socmed', '$alamat')";
-    if ($conn->query($query) === TRUE) {
-        echo "Data inserted successfully!";
+    $query = "INSERT INTO makanTable (namaTempat, jamBuka, category, menu, linkMaps, gambar, socmed, alamat, description) VALUES ('$name', '$jamBuka', '$category', '$menu', '$linkmaps', '$gambar', '$socmed', '$alamat', '$deskripsi')";
+    $query2 = "INSERT INTO review (namaTempat, ratingTotal, ratinger, deskripsi) VALUES ('$name', '$rating', 1, '$komen')";
+    if (($conn->query($query) === TRUE) && ($conn->query($query2) === TRUE)) {
+        echo "Data inserted successfully! Go back to previous page.";
     } else {
         echo "Error: " . $query . "<br>" . $conn->error;
     }

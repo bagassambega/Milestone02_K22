@@ -15,18 +15,26 @@ if (!$conn) {
 
 $submittedName = $_POST["detailButton"];
 
-$sql = "SELECT namaTempat, jamBuka, category, menu, linkMaps, gambar, socmed, alamat FROM makanTable WHERE namaTempat = '$submittedName'";
+$sql = "SELECT namaTempat, jamBuka, category, menu, linkMaps, gambar, socmed, alamat, description FROM makanTable WHERE namaTempat = '$submittedName'";
 $result = $conn->query($sql);
+$sql2 = "SELECT namaTempat, COUNT(*) as nbanyak, SUM(ratingTotal) as sumTotal FROM review WHERE namaTempat = '$submittedName'  GROUP BY namaTempat";
+$result2 = $conn->query($sql2);
 
-// Display the results
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $alamat = $row['alamat'];
         $jam = $row['jamBuka'];
         $linkfoto = $row['gambar'];
         $menu = $row['menu'];
+        $deskripsi = $row['description'];
     }
 }
+else {
+    echo "Data tidak ditemukan";
+}
+$row2 = $result2->fetch_assoc();
+$sumTotal = $row2['sumTotal'];
+$nbanyak = $row2['nbanyak'];
 ?>
 
 
@@ -49,11 +57,12 @@ if ($result->num_rows > 0) {
                 <div class="content-main-text">
                     <h2><?php echo $submittedName; ?></</h2>
                     <div class="content-main-stars">
+                        <!-- <img src="./img/star-full.png" alt="fullstar">
                         <img src="./img/star-full.png" alt="fullstar">
                         <img src="./img/star-full.png" alt="fullstar">
                         <img src="./img/star-full.png" alt="fullstar">
-                        <img src="./img/star-full.png" alt="fullstar">
-                        <h5> | 4</h5>
+                        <h5> | 4</h5> -->
+                        <h5>Rating: <?php echo $sumTotal / $nbanyak; ?> / 5</h5>
                     </div>
                     <h4>Lokasi : <?php echo $alamat ?> <a href="#"><img src="./img/map.png" alt=""></a></h4>
                 </div>
@@ -63,7 +72,15 @@ if ($result->num_rows > 0) {
                 <h5>Jam Buka: <?php echo $jam;?></h5>
                 <h5>Menu:</h5>
                 <p><?php echo $menu;?></p>
-                    
+                <h5>Rating!</h5>
+                <!-- <?php 
+                if ($result2->num_rows > 0) {
+                    while ($row = $result2->fetch_assoc()) {
+                        echo $row["ratingTotal"];
+                    }
+                }
+                ?> -->
+                <p><?php echo $deskripsi; ?></p>
             </div>
         </div>
         <img class="content-img-2" src="./img/tempat-2.png" alt="">
