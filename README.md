@@ -34,7 +34,7 @@ https://docs.google.com/document/d/1JltCXNvGyfTjYeagJEr-SK7P0qkrXLl4dKEp7ktihzE/
 Tantangan dalam kehidupan kampus seperti sulitnya menemukan tempat makan yang cocok dan berkualitas terjadi karena keterbatasan waktu dan energi, keuangan, mahassiswa yang jauh dari rumah, variasi pilihan yang ada, dan faktor gizi. Keterbatasan ini menjadi pokok permasalahan yang akan dijawab oleh website yang kelompok kami telah buat.
 
 ## Solusi
-Untuk mengatasi masalah tersebut, kami membuat suatu website yang dapat menjadi wadah bagi pengguna untuk mendapat dan menambah tempat rekomendasi makanan bagi mereka. Pengguna dapat mendapatkan banyak informasi mengenai tempat makan yang direkomendasikan dan di-rating oleh pengguna lain, dan mereka juga dapat memberikan rekomendasi tempat makan mereka beserta rating dan komentar.
+Pada zaman modern ini, website menjadi hal yang sangat lumrah untuk digunakan dan dekat dengan masyarakat. Oleh karena itu, website menjadi platform yang kami pilih untuk mengatasi masalah. Kami membuat suatu website yang dapat menjadi wadah bagi pengguna untuk mendapat dan menambah tempat rekomendasi makanan bagi mereka. Pengguna dapat mendapatkan banyak informasi mengenai tempat makan yang direkomendasikan dan di-rating oleh pengguna lain, dan mereka juga dapat memberikan rekomendasi tempat makan mereka beserta rating dan komentar.
 
 ## Requirement Program
 1. Xampp
@@ -43,7 +43,7 @@ XAMPP adalah perangkat lunak bebas, yang mendukung banyak sistem operasi, merupa
 
 2. Internet yang memadai
 
-Selayaknya website pada umumnya, pengguna perlu terhubung ke jalur internet yang memadai untuk mengakses website ini.
+Selayaknya website pada umumnya, pengguna perlu terhubung ke jalur internet untuk mengakses website ini.
 
 ## Cara Akses Website
 Website yang digunakan dijalankan di local, sehingga dibutuhkan software seperti XAMPP untuk menjalankannya.
@@ -86,9 +86,6 @@ Fitur ini dapat digunakan oleh pengguna untuk melihat info lebih lanjut mengenai
 3. Content Detail
 
 Masuk ke website All, lalu klik detail di salah satu tempat. Di sana pengguna dapat melihat berbagai informasi mengenai tempat yang direkomendasikan sekaligus melihat bahkan menambahkan rating dan komentar terhadap tempat tersebut.
-
-
-
 
 
 
