@@ -43,7 +43,16 @@ Lorem Ipsum....
 Selayaknya website pada umumnya, pengguna perlu terhubung ke jalur internet untuk mengakses website ini.
 
 ## Fitur dan Cara Menggunakan
-Lorem Ipsum....
+A. Cari Tempat Makan Yuk!
+
+Fitur ini terdapat pada halaman utama website. Pengguna dapat mengetikkan tempat makan atau jenis makanan yang ingin dicari pada kolom pencarian.
+
+B. Semua
+
+Fitur ini berisi seluruh data tempat makanan yang website kami miliki. Data-data pada fitur ini akan bertambah seiring pengguna yang memasukkan data tempat makan rekomendasi mereka.
+
+C. Recommended
+
 
 
 
