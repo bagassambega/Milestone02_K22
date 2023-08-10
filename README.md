@@ -96,7 +96,7 @@ Masuk ke website All, lalu klik detail di salah satu tempat. Di sana pengguna da
 - Billy Samuel Setiawan (19622082) - CSS
 - Fedrianz Dharma (19622128) - HTML CSS
 - Givari Al Fachri (19622141) - Resource
-- Shafiq Irvansyah (19622210) - CSS
+- Shafiq Irvansyah (19622210) - HTML CSS
 - Jason Fernando (19622254) - CSS
 - Anindita Widya Santoso (19622261) - README & Database
 - Audra Zelvania Putri Harjanto (19622262) - Database & Resource
