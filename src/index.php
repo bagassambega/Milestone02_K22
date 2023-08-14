@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <title>Tempat Makan Yuk!</title>
         <link rel="icon" type="image/x-icon" href="./img/favicon.png">
-        <link href="./style/index.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="./style/index.css">
     </head>
 
     <?php include 'header.html'; ?>
@@ -59,21 +59,21 @@
         <h2>Spill Tempat Terbaikmu!</h2>
         <div class="add-content">
             <div class="add-card">
-                <img src="./img/placholder2.png" alt="">
+                <img src="./img/langkah-1.png" alt="Pergi ke Page Tambah">
                 <div class="add-card-text">
                     <h5>1. Masuk ke Page Tambah</h5>
                 </div>
             </div>
             <div class="add-card">
-                <img src="./img/placholder2.png" alt="">
+                <img src="./img/langkah-2.png" alt="Isi dan Kirim Data">
                 <div class="add-card-text">
-                    <h5>2. Isi data-data Tempat Makan</h5>
+                    <h5>2. Isi Data dan Kirim</h5>
                 </div>
             </div>
             <div class="add-card">
-                <img src="./img/placholder2.png" alt="">
+                <img src="./img/langkah-3.png" alt="Data berhasil dikirim">
                 <div class="add-card-text">
-                    <h5>3. Submit</h5>
+                    <h5>3. Data Berhasil Dikirim</h5>
                 </div>
             </div>
         </div>
