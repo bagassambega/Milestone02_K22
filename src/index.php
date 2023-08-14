@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <title>Tempat Makan Yuk!</title>
         <link rel="icon" type="image/x-icon" href="./img/favicon.png">
-        <link href="./style/index.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="./style/index.css">
     </head>
 
     <?php include 'header.html'; ?>
