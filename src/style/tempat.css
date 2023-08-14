@@ -34,7 +34,7 @@ input::placeholder {
 
 .content {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,15 +47,26 @@ input::placeholder {
 }
 .content .content-img-2 {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 0%;
+  right: 0%;
 }
 .content .content-container {
   width: 70vw;
-  margin-top: -5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.content .content-container .rating {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.content .content-container .rating .rating-container {
+  display: flex;
+  flex-direction: row;
+}
+.content .content-container .rating .rating-container .rating-card {
+  margin: 5px;
 }
 .content .content-main {
   display: flex;
@@ -63,21 +74,18 @@ input::placeholder {
   align-items: center;
   padding: 50px;
 }
-.content .content-main svg {
+.content .content-main .main-img {
+  height: 256px;
+  border-radius: 90px;
   margin-right: 40px;
   opacity: 90%;
 }
 .content .content-main .content-main-text {
   justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: column;
 }
 .content .content-main .content-main-text .content-main-stars {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   margin: 5px;
 }
 .content .content-main .content-main-text .content-main-stars img {
@@ -85,9 +93,6 @@ input::placeholder {
 }
 .content .content-description {
   text-align: justify;
-}
-.content .content-description h5 {
-  margin: 30px;
 }
 
 /*# sourceMappingURL=tempat.css.map */

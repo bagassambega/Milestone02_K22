@@ -37,25 +37,24 @@ else {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $submittedName; ?></title>
-    <link href="./style/tempat.css?v=<?php echo time(); ?>" type="text/css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./style/tempat.css">
 </head>
 <?php include 'header.html'; ?>
 <body>
-<section class="content">
+    <section class="content">
         <img class="content-img-1" src="./img/tempat-1.png" alt="">
         <div class="content-container">
             <div class="content-main">
-                <img src="<?php echo $linkfoto;?>" alt="Gambar">
+                <img class="main-img" src="<?php echo $linkfoto;?>" alt="Gambar">
                 <div class="content-main-text">
-                    <h2><?php echo $submittedName; ?></</h2>
+                    <h2><?php echo $submittedName; ?></h2>
                     <div class="content-main-stars">
                         <h5>Rating: <?php
                         if ($result2) {
@@ -79,27 +78,33 @@ else {
             <div class="content-description">
                 <h3>Deskripsi</h3>
                 <h5>Jam Buka: <?php echo $jam;?></h5>
-                <h5>Menu:</h5>
-                <p><?php echo $menu;?></p>
+                <h5>Menu: </h5>
+                <p><?php echo $menu;?></p> 
             </div>
             <div class="rating">
                 <h3>Rating!</h3>
-                <p>
-                 <?php 
-                        if ($result3->num_rows > 0) {
-                            while ($row3 = $result3->fetch_assoc()) {
-                                echo '<div class="rating-container">';
-                                echo '<h5>' . $row3["namaRating"] . '</h5>';
-                                echo '<h5 style="font-size: smaller;">' . $row3['ratingTotal'] . ' / 5 </h5>';
-                                echo '<p>' . $row3['deskripsi'] . '</p>';
-                                echo '</div>';
+                <div class="rating-container">
+                    <p>
+                        <?php 
+                            if ($result3->num_rows > 0) {
+                                while ($row3 = $result3->fetch_assoc()) {
+                                    echo '<div class="rating-card">';
+                                    echo '<h5>' . $row3["namaRating"] . '</h5>';
+                                    echo '<h5 style="font-size: smaller;">' . $row3['ratingTotal'] . ' / 5 </h5>';
+                                    echo '<p>' . $row3['deskripsi'] . '</p>';
+                                    echo '</div>';
+                                    echo '<svg width="3" height="90" viewBox="0 0 3 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="1.5" y1="6.55671e-08" x2="1.49999" y2="149" stroke="black" stroke-width="3"/>
+                                    </svg>
+                                    ';
+                                }
                             }
-                        }
-                        else {
-                            echo "<h5>Belum ada rating yang diberikan</h5>";
-                        }
-                ?>
-                </p>
+                            else {
+                                echo "<h5>Belum ada rating yang diberikan</h5>";
+                            }
+                        ?>
+                    </p>
+                </div>
             </div>
             <div class="review-add">
                 <h3>Beri Ratingmu!</h3>
@@ -120,6 +125,7 @@ else {
         </div>
         <img class="content-img-2" src="./img/tempat-2.png" alt="">
     </section>
-    <?php include 'footer.html'; 
-    $conn->close();
-    exit;?>
+</body
+<?php include 'footer.html'; 
+ $conn->close();
+exit;?>

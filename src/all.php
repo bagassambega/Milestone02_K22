@@ -6,10 +6,11 @@
         <meta charset="UTF-8">
         <title>Semua Tempat Makan</title>
         <link rel="icon" type="image/x-icon" href="./img/favicon.png">
-        <link rel="stylesheet" href="./style/pageall.css">
+        <link rel="stylesheet" href="./style/semua.css">
     </head>
 <?php include_once 'header.html'; ?>
 <body>
+    <section class="content">
     <div class="card-container">
         <?php
 
@@ -52,8 +53,8 @@
 
             $conn->close();
             
-
         ?>
     </div>
+    </section>
     
 <?php include_once 'footer.html'; ?>
