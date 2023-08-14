@@ -1,11 +1,44 @@
 body {
-  overflow-x: hidden;
-  overflow-y: scroll;
-  font-family: "Open Sans", sans-serif;
+  background-color: #fff2e2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0d0d0d;
+}
+
+header {
+  background-color: #d2545e;
+}
+
+nav h5, nav h6 {
+  color: #fff2e2;
+}
+
+.add-card {
+  background-color: #fffffe;
+}
+
+footer {
+  background-color: #d2545e;
+}
+footer h4, footer h5 {
+  color: #fff2e2;
+}
+footer h6 {
+  color: #e7d8c6;
+}
+
+input::placeholder {
+  color: #8f8f8f;
+}
+
+body {
+  background-color: #fffffe;
 }
 
 .content {
   width: 100vw;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-self: center;

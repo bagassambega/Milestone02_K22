@@ -1,5 +1,5 @@
 body {
-  background-color: #fffffe;
+  background-color: #fff2e2;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,7 +33,6 @@ input::placeholder {
 }
 
 .jumbotron {
-  background-color: #fff2e2;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -95,6 +94,7 @@ input::placeholder {
 }
 
 .recomend {
+  background-color: #fffffe;
   position: relative;
   z-index: 4;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.24);
@@ -113,7 +113,7 @@ input::placeholder {
   justify-content: center;
 }
 .recomend .recomend-container h2 {
-  margin-top: -20px;
+  margin-top: -40px;
   margin-bottom: 80px;
 }
 .recomend .recomend-container .recomend-content {
@@ -139,7 +139,6 @@ input::placeholder {
 }
 
 .add {
-  background-color: #fff2e2;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -156,7 +155,7 @@ input::placeholder {
   justify-content: center;
 }
 .add .add-container h2 {
-  margin-top: -20px;
+  margin-top: -40px;
   margin-bottom: 80px;
 }
 .add .add-container .add-content {

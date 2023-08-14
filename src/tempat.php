@@ -72,7 +72,7 @@ else {
                         
                         ?></h5>
                     </div>
-                    <h4>Lokasi : <?php echo $alamat ?> <a href="#"><img src="./img/map.png" alt=""></a></h4>
+                    <h4>Lokasi : <?php echo $alamat."<a target=\"_blank\" href=\"http://maps.google.com/?q=".$alamat."\">" ?><img src="./img/map.png" alt=""></a></h4>
                 </div>
             </div>
             <div class="content-description">

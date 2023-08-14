@@ -27,6 +27,10 @@ img {
   user-select: none;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 64px;
@@ -74,7 +78,7 @@ h6, input, textarea, li {
 }
 
 body {
-  background-color: #fffffe;
+  background-color: #fff2e2;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -9,7 +9,7 @@ $Success : #93bc39;
 $Error : #ee3e54;
 
 body{
-    background-color: $background-2;
+    background-color: $background;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -23,7 +23,6 @@ header{
 nav h5, nav h6{
     color: $background;
 }
-    
 
 .add-card{
     background-color: $background-2;

@@ -1,17 +1,15 @@
-
+@import 'color';
 body{
-    overflow-x: hidden;
-    overflow-y: scroll;
-    font-family: 'Open Sans', sans-serif;
+    background-color: $background-2;
 }
 
 .content{
     width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-self: center;
 }   
-
 
 .page-container{
     background-color: rgb(248, 224, 219);
