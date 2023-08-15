@@ -36,7 +36,7 @@
                 flex-direction: row;
                 
                 .rating-card{
-                    margin: 5px;
+                    margin: 5px 30px;
                 }
             }
         }
@@ -71,5 +71,19 @@
     
     .content-description{
         text-align: justify;
+        margin: 2vh 2vw;
+    }
+}
+.review-add {
+    margin: 3vh 0;
+
+    button {
+        background: #d2545e;
+        border: none;
+        border-radius: 3px;
+        padding: 14px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        color: white;
     }
 }

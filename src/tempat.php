@@ -93,7 +93,7 @@ else {
                                     echo '<h5 style="font-size: smaller;">' . $row3['ratingTotal'] . ' / 5 </h5>';
                                     echo '<p>' . $row3['deskripsi'] . '</p>';
                                     echo '</div>';
-                                    echo '<svg width="3" height="90" viewBox="0 0 3 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    echo '<svg width="3" height="80" viewBox="0 0 3 149" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <line x1="1.5" y1="6.55671e-08" x2="1.49999" y2="149" stroke="black" stroke-width="3"/>
                                     </svg>
                                     ';

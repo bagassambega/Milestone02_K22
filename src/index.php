@@ -22,34 +22,71 @@
     </div>
     <img id="img-jumbotron-2" src="./img/Jumbotron-2.png" alt="">
 </section>
-<section class="recomend" id="recomend"> 
+<section class="recomend" id="recomend">
+    <?php
+
+
+            $servername = "containers-us-west-135.railway.app";
+            $dBName = "railway";
+            $dBUsername = "root";
+            $dBPassword = "uXKmGWFvCasGce9YGVzX";
+            $dBport = "5590";
+            $dBurl = "mysql://root:uXKmGWFvCasGce9YGVzX@containers-us-west-135.railway.app:5590/railway";
+
+            $conn = new mysqli($servername, $dBUsername, $dBPassword, $dBName, $dBport);
+
+            if (!$conn) {
+                die("Connection failed" . mysqli_connect_error());
+            }
+
+            $sql = "SELECT namaTempat, alamat, gambar FROM makanTable";
+            $result = $conn->query($sql);
+    ?>
     <div class="recomend-container">
         <h2>Recommend Banget!</h2>
         <div class="recomend-content">
-            <div class="recomend-card">
-                <img src="./img/placeholder.png" alt="">
-                <h4>Bebek Ali Borme</h4>
-                <a href="all.php"><h6>Lihat Tempat</h6></a>
-                <svg width="200" height="4" viewBox="0 0 200 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="2" x2="200" y2="2" stroke="#FF8E3C" stroke-width="4"/>
-                </svg>        
-            </div>
-            <div class="recomend-card">
-                <img src="./img/placeholder.png" alt="">
-                <h4>Upnormal Djuanda</h4>
-                <a href="all.php"><h6>Lihat Tempat</h6></a>
-                <svg width="200" height="4" viewBox="0 0 200 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="2" x2="200" y2="2" stroke="#FF8E3C" stroke-width="4"/>
-                </svg>        
-            </div>
-            <div class="recomend-card">
-                <img src="./img/placeholder.png" alt="">
-                <h4>Bakmie Hokie</h4>
-                <a href="all.php"><h6>Lihat Tempat</h6></a>
-                <svg width="200" height="4" viewBox="0 0 200 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="2" x2="200" y2="2" stroke="#FF8E3C" stroke-width="4"/>
-                </svg>        
-            </div>
+            <?php
+            while ($row = $result->fetch_assoc()) {
+                $name = $row["namaTempat"];
+                if ($name == "Bebek Ali Borme" || $name == "Upnormal Coffee Roaster Juanda" || $name == "Bakmie Hokie") {
+                    echo '<div class="recomend-card">';
+                    echo '<img src="' . $row["gambar"] . '" alt="" width="200" height="200">';
+                    echo '<h4>' . $row["namaTempat"] . '</h4>';
+                    echo '<form action="tempat.php" method="post">
+                                <button type="submit" name="detailButton" value="' . $row["namaTempat"] . '"><h6>Lihat Tempat</h6></button>
+                            </form>'
+                          ;
+                    echo '<svg width="200" height="4" viewBox="0 0 200 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="2" x2="200" y2="2" stroke="#FF8E3C" stroke-width="4"/>
+                        </svg>';
+                    echo '</div>';
+                }
+            }
+            ?>
+<!--            <div class="recomend-card">-->
+<!--                <img src="./img/placeholder.png" alt="">-->
+<!--                <h4>Bebek Ali Borme</h4>-->
+<!--                <a href="all.php"><h6>Lihat Tempat</h6></a>-->
+<!--                <svg width="200" height="4" viewBox="0 0 200 4" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <line y1="2" x2="200" y2="2" stroke="#FF8E3C" stroke-width="4"/>-->
+<!--                </svg>        -->
+<!--            </div>-->
+<!--            <div class="recomend-card">-->
+<!--                <img src="./img/placeholder.png" alt="">-->
+<!--                <h4>Upnormal Djuanda</h4>-->
+<!--                <a href="all.php"><h6>Lihat Tempat</h6></a>-->
+<!--                <svg width="200" height="4" viewBox="0 0 200 4" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <line y1="2" x2="200" y2="2" stroke="#FF8E3C" stroke-width="4"/>-->
+<!--                </svg>        -->
+<!--            </div>-->
+<!--            <div class="recomend-card">-->
+<!--                <img src="./img/placeholder.png" alt="">-->
+<!--                <h4>Bakmie Hokie</h4>-->
+<!--                <a href="all.php"><h6>Lihat Tempat</h6></a>-->
+<!--                <svg width="200" height="4" viewBox="0 0 200 4" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <line y1="2" x2="200" y2="2" stroke="#FF8E3C" stroke-width="4"/>-->
+<!--                </svg>        -->
+<!--            </div>-->
         </div>
     </div>
 </section>

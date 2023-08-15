@@ -127,6 +127,10 @@ input::placeholder {
   justify-items: center;
   margin: 48px;
 }
+.recomend .recomend-container .recomend-content .recomend-card button {
+  border: none;
+  background: none;
+}
 .recomend .recomend-container .recomend-content .recomend-card img {
   border-radius: 120px;
   margin-bottom: 30px;
